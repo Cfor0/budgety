@@ -210,7 +210,7 @@ var UIController = (function() {
 
         dec = numSplit[1];
 
-        // Use regex to add commas to groups of 3 numbers, no matter the size.
+        // Use regex to add commas to groups of 3 numbers, no matter the size
         return (type === 'exp' ? '-' : '+') + ' ' + num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     };
