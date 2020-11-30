@@ -300,6 +300,10 @@ var UIController = (function () {
                 document.querySelector(DOMstrings.percentageLabel).textContent = '---';
             }
 
+            // Alert the user if they are over budget.
+            if (obj.budget < 0) {
+                alert("You are Over Budget!")
+            }
         },
 
 
