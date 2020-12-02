@@ -430,6 +430,10 @@ var controller = (function (budgetCtrl, UICtrl) {
 
             // 6. Calculate and update percentages
             updatePercentages();
+        } else if(input.description === "") {
+            alert("You forgot to write a description.")
+        } else if (input.value === 0) {
+            alert("You forgot to input the amount.")
         }
     };
 
